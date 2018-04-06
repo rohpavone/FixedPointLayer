@@ -4,7 +4,7 @@ pyCaffe layer that emulates an arbitrarily sized fixed point activation by restr
 Input: 32-bit floating-point number that you wish to treat like a fixed point number of arbitrary size.
 
 To use:
-* Add layer to prototxt (this is a python layer. See how to add here: https://github.com/rohpavone/FixedPointLayer.git)
+* Add layer to prototxt (this is a python layer. See how to add [here](https://github.com/rohpavone/FixedPointLayer.git))
   * top should be set to input of the next layer (originally fed by the input to the new layer)
   * bottom should be the previous layer you wish to treat as a fixed point
 * param_str should have three parameters: `param_str: '{ "mantissa_bits": 8, "min_exp": 131, "max_exp": 96 }'`
